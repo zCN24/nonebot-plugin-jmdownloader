@@ -26,7 +26,10 @@ from nonebot_plugin_apscheduler import scheduler
 __plugin_meta__ = PluginMetadata(
     name="JMComic插件",
     description="JMComic搜索、下载插件，支持全局屏蔽jm号和tag，仅支持OnebotV11协议。",
-    usage="用法",
+    usage="jm下载 [jm号]：下载指定jm号的本子\n"
+          "jm查询 [jm号]：查询指定jm号的本子\n"
+          "jm搜索 [关键词]：搜索包含关键词的本子\n"
+          "jm设置文件夹 [文件夹名]：设置本群的本子储存文件夹\n",
     type="application",  # library
     homepage="https://github.com/Misty02600/nonebot-plugin-jmcomic",
     config=Config,
