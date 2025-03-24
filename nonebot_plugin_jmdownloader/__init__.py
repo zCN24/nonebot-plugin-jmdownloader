@@ -24,8 +24,8 @@ require("nonebot_plugin_apscheduler")
 from nonebot_plugin_apscheduler import scheduler
 
 __plugin_meta__ = PluginMetadata(
-    name="名称",
-    description="描述",
+    name="JMComic插件",
+    description="JMComic搜索、下载插件，支持全局屏蔽jm号和tag，仅支持OnebotV11协议。",
     usage="用法",
     type="application",  # library
     homepage="https://github.com/Misty02600/nonebot-plugin-jmcomic",
