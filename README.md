@@ -115,7 +115,7 @@ plugins = ["nonebot_plugin_jmdownloader"]
 | jmcomic_proxies   |  否   | system | 网络代理地址                   |
 | jmcomic_log       |  否   | False  | 是否开启JMComic-Crawler-Python的日志输出               |
 | jmcomic_thread_count | 否 |   10   | 下载线程数量                   |
-| jmcomic_allow_groups | 否 |   10   | 是否默认启用所有群                   |
+| jmcomic_allow_groups | 否 |   False   | 是否默认启用所有群                   |
 | jmcomic_user_limits | 否 |   5   | 每位用户的每周下载限制次数                   |
 
 **示例：**
