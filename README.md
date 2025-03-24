@@ -6,7 +6,7 @@
 
 <div align="center">
 
-## ✨ nonebot-plugin-jmdownloader ✨
+## ✨ *基于 Nonebot2 的 JMComic 插件* ✨
 
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/Misty02600/nonebot-plugin-jmdownloader.svg" alt="license">
@@ -164,6 +164,7 @@ JMCOMIC_USER_LIMITS=5
 ## ⚠️ 使用警告
 
 **仅作为交流学习使用！请严格遵守法律法规与公序良俗！**
+
 ❌ 禁止将本插件用于任何非法用途
 ❌ 禁止分享/传播未成年人相关或违法内容
 本插件仅限**个人合规使用**，用户行为责任自负，开发者不承担任何连带责任。
