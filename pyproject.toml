@@ -14,7 +14,7 @@ dependencies = [
   "nonebot-plugin-waiter>=0.8.1,<1.0.0",
   "nonebot-plugin-localstore>=0.7.4,<1.0.0",
   "nonebot-plugin-apscheduler>=0.5.0,<1.0.0",
-  "jmdownloader>=2.5.32",
+  "jmcomic>=2.5.32",
   "pillow>=11.1.0",
   "img2pdf>=0.6.0",
 ]
