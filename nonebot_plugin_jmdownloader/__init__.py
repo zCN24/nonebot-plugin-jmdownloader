@@ -31,7 +31,7 @@ __plugin_meta__ = PluginMetadata(
           "jm搜索 [关键词]：搜索包含关键词的本子\n"
           "jm设置文件夹 [文件夹名]：设置本群的本子储存文件夹\n",
     type="application",  # library
-    homepage="https://github.com/Misty02600/nonebot-plugin-jmcomic",
+    homepage="https://github.com/Misty02600/nonebot-plugin-jmdownloader",
     config=Config,
     supported_adapters={"~onebot.v11"},
     extra={"author": "Misty02600 <xiao02600@gmail.com>"},
