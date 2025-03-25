@@ -176,3 +176,7 @@ bot.py
 !.vscode/launch.json
 !.vscode/extensions.json
 !.vscode/*.code-snippets
+.env.test
+
+/tests
+/uv.lock
