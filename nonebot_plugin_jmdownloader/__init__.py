@@ -1,6 +1,7 @@
 import asyncio
+import shutil
+from pathlib import Path
 
-import img2pdf
 from jmcomic import (JmcomicException, JmDownloader,
                      MissingAlbumPhotoException, create_option_by_str)
 from nonebot import logger, on_command, require
@@ -12,7 +13,8 @@ from nonebot.params import ArgPlainText, CommandArg
 from nonebot.permission import SUPERUSER
 from nonebot.plugin import PluginMetadata
 
-from .config import Config, cache_dir, config_data, plugin_config
+from .config import (Config, cache_dir, config_data, plugin_cache_dir,
+                     plugin_config)
 from .data_source import data_manager
 from .utils import (blur_image_async, check_group_and_user, check_permission,
                     download_avatar, download_photo_async,
@@ -436,3 +438,15 @@ async def reset_user_limits():
 
     except Exception as e:
         logger.error(f"刷新用户下载次数时出错：{e}")
+
+
+@scheduler.scheduled_job("cron", hour=3, minute=0)
+async def clear_cache_dir():
+    """ 每天凌晨3点清理缓存文件夹 """
+    try:
+        if plugin_cache_dir.exists():
+            shutil.rmtree(plugin_cache_dir)
+            plugin_cache_dir.mkdir(parents=True, exist_ok=True)
+            logger.info(f"已成功清理缓存目录：{cache_dir}")
+    except Exception as e:
+        logger.error(f"清理缓存目录失败：{e}")
